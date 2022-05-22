@@ -37,6 +37,9 @@ let fiyat2 = parseFloat(document.getElementById("price2").innerHTML);
 let toplam = parseFloat(document.getElementById("prices").innerHTML);
 let summinus = 54.99;
 let sumplus = 54.99;
+let summinus2 = 74.99;
+let sumplus2 = 74.99;
+
 function myFunction(){
     parca -= 1;
     document.getElementById("pieces1").innerHTML = parca
@@ -58,10 +61,9 @@ const buttons3 = document.getElementById("plus1");
 buttons2.addEventListener("click", myFunction1);
 function myFunction1(){
     parca1 -= 1;
-    document.getElementById("pieces1").innerHTML = parca1
-    fiyat2 -= fiyat2
-    document.getElementById("price2").innerHTML = fiyat2
-    
+    document.getElementById("pieces2").innerHTML = parca1
+    sumplus2 -= summinus2
+    document.getElementById("price2").innerHTML = sumplus2.toFixed(2)    
     // console.log(parca)
 }
 // let parca = parseInt(document.getElementById("pieces1").innerHTML);
@@ -69,6 +71,6 @@ console.log(parca1);
 buttons3.addEventListener("click", () => {
     parca1 += 1;
     document.getElementById("pieces2").innerHTML = parca1
-    fiyat2 += fiyat2
-    document.getElementById("price2").innerHTML = fiyat2
+    sumplus2 += fiyat2
+    document.getElementById("price2").innerHTML = sumplus2.toFixed(2)
 });

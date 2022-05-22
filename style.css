@@ -223,6 +223,13 @@ body label {
     font-weight: 400;
     font-size: 1.1rem;
   }
+
+  #prices {
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
 }
 @media screen and (max-width: 540px) {
   body {
@@ -426,6 +433,12 @@ body label {
     color: rgba(0, 0, 0, 0.678);
     font-weight: 400;
     font-size: 1.1rem;
+  }
+  .total div #prices {
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-decoration: none;
   }
 }
 
