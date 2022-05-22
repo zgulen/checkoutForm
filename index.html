@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Montserrat:ital,wght@1,100&family=Roboto:wght@100&family=Sorts+Mill+Goudy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h2>Checkout</h2>
+    </header>
+    <main class="main">
+      <!--! email -->
+      <section class="info">
+        <div class="email">
+          <h2>Contact information</h2>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email."
+          />
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <!-- ! phone -->
+        <div class="phone">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            value="+90"
+            placeholder="Enter your phone..."
+          />
+          <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <h2 class="shipping">Shipping address</h2>
+        <div>
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your Full name"
+          />
+          <i class="fa-solid fa-user-large"></i>
+        </div>
+
+        <div>
+          <label for="address">Address</label>
+          <input
+            type="text"
+            name="Address"
+            id="address"
+            placeholder="Enter your address"
+          />
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <div>
+          <label for="city">City</label>
+          <input
+            type="text"
+            name="City"
+            id="city"
+            placeholder="Enter your City"
+          />
+          <i class="fa-solid fa-city"></i>
+        </div>
+        <div class="country">
+          <div>
+            <label for="country">Country</label>
+            <select name="" id="country">
+              <option value="country">Turkey</option>
+            </select>
+            <i class="fa-solid fa-earth-europe"></i>
+          </div>
+          <div>
+            <label for="post">Post Code</label>
+            <input
+              type="text"
+              name="Post Code"
+              id="post"
+              placeholder="Enter your postal code"
+            />
+          </div>
+        </div>
+        <div class="check">
+          <label for="agree">See this information next time</label>
+          <input type="checkbox" name="hold" id="agree" />
+        </div>
+        <div class="btn">
+          <a href="#"><button>Continue</button></a>
+        </div>
+      </section>
+      <section class="right">
+        <div class="img1">
+          <img src="./images/photo1.png" alt="backpack" />
+          <div class="btns">
+            <h3>Vintage Backbag</h3>
+            <p>$54.99 <span>$94.99</span></p>
+            <div class="öff">
+              <button>–</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="img1">
+            <img src="./images/photo2.png" alt="Shoes" />
+            <div class="btns">
+              <h3>Levi Shoes</h3>
+              <p>$74.99 <span>$124.99</span></p>
+              <div class="öff">
+                <button>–</button>
+                <p>1</p>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="total">
+          <div>
+            <p>Shipping</p>
+            <p>$19</p>
+          </div>
+          <div>
+            <p>Total</p>
+            <p>$148.98</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
