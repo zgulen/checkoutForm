@@ -39,7 +39,9 @@
             required
           />
           <i class="fa-solid fa-envelope"></i>
+         
         </div>
+        <p id="demo"></p>
         <!-- ! phone -->
         <div class="phone">
           <label for="phone">Phone</label>
@@ -115,17 +117,18 @@
         <div class="btn">
           <button>Continue</button>
         </div>
+    </form>
       </section>
       <section class="right">
         <div class="img1">
           <img src="./images/photo1.png" alt="backpack" />
           <div class="btns">
             <h3>Vintage Backbag</h3>
-            <p>$54.99 <span>$94.99</span></p>
+            <p >$<span id="price1">54.99</span>  <span>$94.99</span></p>
             <div class="öff">
-              <button id="minus">–</button>
-              <p id="pieces">1</p>
-              <button id="plus">+</button>
+              <button id="minus" type="button">–</button>
+              <p id="pieces1">1</p>
+              <button id="plus" type="button">+</button>
             </div>
           </div>
         </div>
@@ -134,11 +137,11 @@
             <img src="./images/photo2.png" alt="Shoes" />
             <div class="btns">
               <h3>Levi Shoes</h3>
-              <p>$74.99 <span>$124.99</span></p>
+              <p>$<span id="price2">74.99</span> <span>$124.99</span></p>
               <div class="öff">
-                <button id="minus">–</button>
-                <p id="pieces">1</p>
-                <button id="plus">+</button>
+                <button id="minus1" type="button">–</button>
+                <p id="pieces2">1</p>
+                <button id="plus1" type="button">+</button>
               </div>
             </div>
           </div>
@@ -150,11 +153,12 @@
           </div>
           <div>
             <p>Total</p>
-            <p id="prices">$148.98</p>
+            <p >$<span id="prices">148.98</span></p>
           </div>
         </div>
-    </form>
+    
       </section>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>
