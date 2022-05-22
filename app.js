@@ -41,7 +41,7 @@ function myFunction(){
     parca -= 1;
     document.getElementById("pieces1").innerHTML = parca
     sumplus -= summinus
-    document.getElementById("price1").innerHTML = sumplus
+    document.getElementById("price1").innerHTML = sumplus.toFixed(2)
     // console.log(parca)
 }
 // let parca = parseInt(document.getElementById("pieces1").innerHTML);
@@ -50,7 +50,7 @@ buttons1.addEventListener("click", () => {
     parca += 1;
     document.getElementById("pieces1").innerHTML = parca
     sumplus += fiyat1
-    document.getElementById("price1").innerHTML = sumplus
+    document.getElementById("price1").innerHTML = sumplus.toFixed(2)
 });
 //! image that is below
 const buttons2 = document.getElementById("minus1");
