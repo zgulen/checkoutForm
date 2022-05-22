@@ -35,6 +35,7 @@ let parca1 = parseInt(document.getElementById("pieces2").innerHTML);
 let fiyat1 = parseFloat(document.getElementById("price1").innerHTML); 
 let fiyat2 = parseFloat(document.getElementById("price2").innerHTML);
 let toplam = parseFloat(document.getElementById("prices").innerHTML);
+let total = fiyat1 + fiyat2;
 let summinus = 54.99;
 let sumplus = 54.99;
 let summinus2 = 74.99;
@@ -45,6 +46,9 @@ function myFunction(){
     document.getElementById("pieces1").innerHTML = parca
     sumplus -= summinus
     document.getElementById("price1").innerHTML = sumplus.toFixed(2)
+    total = sumplus + sumplus2 + 19
+    // fiyat1 = sumplus
+    document.getElementById("prices").innerHTML = total.toFixed(2)
     // console.log(parca)
 }
 // let parca = parseInt(document.getElementById("pieces1").innerHTML);
@@ -54,6 +58,9 @@ buttons1.addEventListener("click", () => {
     document.getElementById("pieces1").innerHTML = parca
     sumplus += fiyat1
     document.getElementById("price1").innerHTML = sumplus.toFixed(2)
+    total = sumplus + sumplus2 + 19
+    // fiyat1 = sumplus
+    document.getElementById("prices").innerHTML = total.toFixed(2)
 });
 //! image that is below
 const buttons2 = document.getElementById("minus1");
@@ -63,8 +70,9 @@ function myFunction1(){
     parca1 -= 1;
     document.getElementById("pieces2").innerHTML = parca1
     sumplus2 -= summinus2
-    document.getElementById("price2").innerHTML = sumplus2.toFixed(2)    
-    // console.log(parca)
+    document.getElementById("price2").innerHTML = sumplus2.toFixed(2)
+    total = sumplus + sumplus2 + 19
+    document.getElementById("prices").innerHTML = total.toFixed(2)
 }
 // let parca = parseInt(document.getElementById("pieces1").innerHTML);
 console.log(parca1);
@@ -73,4 +81,7 @@ buttons3.addEventListener("click", () => {
     document.getElementById("pieces2").innerHTML = parca1
     sumplus2 += fiyat2
     document.getElementById("price2").innerHTML = sumplus2.toFixed(2)
+    total = sumplus + sumplus2 + 19
+    document.getElementById("prices").innerHTML = total.toFixed(2)
+
 });
