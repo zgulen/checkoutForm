@@ -29,12 +29,14 @@
       <section class="info">
         <div class="email">
           <h2>Contact information</h2>
+          <form action="get">
           <label for="email">Email</label>
           <input
             type="text"
             name="email"
             id="email"
             placeholder="Enter your email."
+            required
           />
           <i class="fa-solid fa-envelope"></i>
         </div>
@@ -42,6 +44,7 @@
         <div class="phone">
           <label for="phone">Phone</label>
           <input
+          required
             type="tel"
             name="phone"
             id="phone"
@@ -55,6 +58,7 @@
         <div>
           <label for="name">Full name</label>
           <input
+          required
             type="text"
             name="name"
             id="name"
@@ -66,6 +70,7 @@
         <div>
           <label for="address">Address</label>
           <input
+          required
             type="text"
             name="Address"
             id="address"
@@ -76,6 +81,7 @@
         <div>
           <label for="city">City</label>
           <input
+          required
             type="text"
             name="City"
             id="city"
@@ -87,13 +93,14 @@
           <div>
             <label for="country">Country</label>
             <select name="" id="country">
-              <option value="country">Turkey</option>
+              <option value="country" required>Turkey</option>
             </select>
             <i class="fa-solid fa-earth-europe"></i>
           </div>
           <div>
             <label for="post">Post Code</label>
             <input
+            required
               type="text"
               name="Post Code"
               id="post"
@@ -106,7 +113,7 @@
           <input type="checkbox" name="hold" id="agree" />
         </div>
         <div class="btn">
-          <a href="#"><button>Continue</button></a>
+          <button>Continue</button>
         </div>
       </section>
       <section class="right">
@@ -116,9 +123,9 @@
             <h3>Vintage Backbag</h3>
             <p>$54.99 <span>$94.99</span></p>
             <div class="öff">
-              <button>–</button>
-              <p>1</p>
-              <button>+</button>
+              <button id="minus">–</button>
+              <p id="pieces">1</p>
+              <button id="plus">+</button>
             </div>
           </div>
         </div>
@@ -129,9 +136,9 @@
               <h3>Levi Shoes</h3>
               <p>$74.99 <span>$124.99</span></p>
               <div class="öff">
-                <button>–</button>
-                <p>1</p>
-                <button>+</button>
+                <button id="minus">–</button>
+                <p id="pieces">1</p>
+                <button id="plus">+</button>
               </div>
             </div>
           </div>
@@ -143,9 +150,10 @@
           </div>
           <div>
             <p>Total</p>
-            <p>$148.98</p>
+            <p id="prices">$148.98</p>
           </div>
         </div>
+    </form>
       </section>
     </main>
   </body>
