@@ -140,12 +140,30 @@ body label {
     width: 300px;
   }
   .right p {
-    color: rgba(209, 140, 12, 0.774);
+    color: rgba(255, 166, 0, 0.774);
     font-weight: 600;
     font-size: 1rem;
     margin: 0;
     padding: 0;
     letter-spacing: -1px;
+  }
+  .right p #price1 {
+    color: rgba(255, 166, 0, 0.925);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+    text-decoration: none;
+  }
+  .right p #price2 {
+    color: rgba(255, 166, 0, 0.925);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -1px;
+    text-decoration: none;
   }
   .right p span {
     text-decoration: line-through;
