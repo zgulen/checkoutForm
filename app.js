@@ -37,7 +37,7 @@ let toplam = parseFloat(document.getElementById("prices").innerHTML); //? total 
 //!
 
 let tax = (fiyat1 + fiyat2 + fiyat3) * 0.18; //!total
-let total = fiyat1 + fiyat2 + fiyat3 + 19 + tax
+let total = fiyat1 + fiyat2 + fiyat3 + 19 + tax;
 //? -------------------------
 let discount = 94.99; //! discount backpack
 let summinus = 54.99; //!backpack
