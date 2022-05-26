@@ -119,41 +119,67 @@
         </div>
     </form>
       </section>
-      <section class="right">
-        <div class="img1">
+      <section class="right" >
+        <div class="img1" id="img1">
           <img src="./images/photo1.png" alt="backpack" />
           <div class="btns">
             <h3>Vintage Backbag</h3>
-            <p >$<span id="price1">54.99</span>  <span>$94.99</span></p>
+            <p >$<span id="price1">54.99</span>  <span id="none">94.99</span></p>
             <div class="öff">
               <button id="minus" type="button">–</button>
               <p id="pieces1">1</p>
               <button id="plus" type="button">+</button>
             </div>
+            <button onclick="remove1()" class="remove" id="remove1">Remove</button>
+
           </div>
         </div>
         <div>
-          <div class="img1">
+          <div class="img1" id="img2">
             <img src="./images/photo2.png" alt="Shoes" />
             <div class="btns">
               <h3>Levi Shoes</h3>
-              <p>$<span id="price2">74.99</span> <span>$124.99</span></p>
+              <p>$<span id="price2">74.99</span> <span id="none1">124.99</span></p>
               <div class="öff">
                 <button id="minus1" type="button">–</button>
                 <p id="pieces2">1</p>
                 <button id="plus1" type="button">+</button>
               </div>
+              <button onclick="remove2()" class="remove" id="remove2">Remove</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="img1" id="img3">
+            <img src="./images/photo3.jpg" alt="Shoes" />
+            <div class="btns">
+              <h3>Levi Shoes</h3>
+              <p>$<span id="price3">74.99</span> <span id="none2">124.99</span></p>
+              <div class="öff">
+                <button id="minus2" type="button">–</button>
+                <p id="pieces3">1</p>
+                <button id="plus2" type="button">+</button>
+              </div>
+              <button onclick="remove3()" class="remove" id="remove3">Remove</button>
             </div>
           </div>
         </div>
         <div class="total">
+          <div>
+            <p>Subtotal</p>
+            <p id="subtotal"></p>
+          </div>
+          <div>
+            <p>Tax(18%)</p>
+            <p id="tax"></p>
+          </div>
           <div>
             <p>Shipping</p>
             <p>$19</p>
           </div>
           <div>
             <p>Total</p>
-            <p >$<span id="prices">148.98</span></p>
+            <p >$<span id="prices"></span></p>
           </div>
         </div>
     
