@@ -61,13 +61,18 @@ let coupon2 = parseFloat(document.getElementById("none2").innerHTML);
 //!Backpack Section
 const buttons = document.getElementById("minus");
 buttons.addEventListener("click", myFunction);
+
 //! bacpack remove price reset
 function remove1() {
     const element = document.getElementById("img1");
     element.remove();
     return sumplus = 0,
         total = sumplus + sumplus2 + sumplus3 + 19,
-        document.getElementById("prices").innerHTML = total.toFixed(2)
+        document.getElementById("prices").innerHTML = total.toFixed(2),
+        subtotal = sumplus + sumplus2 + sumplus3,
+        document.getElementById("subtotal").innerHTML = subtotal.toFixed(2),
+        tax = (sumplus + sumplus2 + sumplus3) * 0.18,
+        document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
 }
 
 //! shoes remove price reset
@@ -76,7 +81,11 @@ function remove2() {
     element.remove();
     return sumplus2 = 0,
         total = sumplus + sumplus2 + sumplus3 + 19,
-        document.getElementById("prices").innerHTML = total.toFixed(2)
+        document.getElementById("prices").innerHTML = total.toFixed(2),
+        subtotal = sumplus + sumplus2 + sumplus3,
+        document.getElementById("subtotal").innerHTML = subtotal.toFixed(2),
+        tax = (sumplus + sumplus2 + sumplus3) * 0.18,
+        document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
 }
 
 //! shoes remove price reset
@@ -85,8 +94,12 @@ function remove3() {
     element.remove();
     return sumplus3 = 0,
         total = sumplus + sumplus2 + sumplus3 + 19,
-        document.getElementById("prices").innerHTML = total.toFixed(2)
-}
+        document.getElementById("prices").innerHTML = total.toFixed(2),
+        subtotal = sumplus + sumplus2 + sumplus3,
+        document.getElementById("subtotal").innerHTML = subtotal.toFixed(2),
+        tax = (sumplus + sumplus2 + sumplus3) * 0.18,
+        document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
+    }
 
 let subtotal = fiyat1 + fiyat2 + fiyat3;
 document.getElementById("tax").innerHTML = tax.toFixed(2)
