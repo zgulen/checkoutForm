@@ -26,6 +26,7 @@ body {
     }
     
   }
+  
   //  ! MAIN
   .main {
     margin-top: 2rem;
@@ -145,7 +146,7 @@ body {
             letter-spacing: -1px;
             text-decoration: none;
           }
-          #price2{
+          #price2, #price3{
             color: rgba(255, 166, 0, 0.925);
             font-weight: 600;
             font-size: 1rem;
@@ -182,6 +183,12 @@ body {
       height: 150px;
       width: 100%;
       margin-left: 1rem;
+      .remove{
+        border: none;
+        text-decoration: underline;
+        background-color: red;
+        border-radius: 5px;
+      }
 
     }
     .öff{
@@ -292,10 +299,10 @@ body {
       opacity: .5;
       position: absolute;
       left: 1.5%;
-      top: 55%;
+      top: 60%;
     }
     .fa-envelope {
-      top: 84%;
+      top: 77%;
     }
     .country {
       display: flex;
@@ -410,6 +417,11 @@ body {
             background-color: rgba(211, 202, 202, 0.356);
             border: none;
         }
+      }
+      .remove{
+        border: none;
+        text-decoration: underline;
+        background-color: red;
       }
     }
     .total{
