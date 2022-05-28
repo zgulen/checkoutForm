@@ -67,7 +67,7 @@ function remove1() {
     const element = document.getElementById("img1");
     element.remove();
     return sumplus = 0,
-        total = sumplus + sumplus2 + sumplus3 + 19,
+        total = sumplus + sumplus2 + sumplus3 + 19 + tax,
         document.getElementById("prices").innerHTML = total.toFixed(2),
         subtotal = sumplus + sumplus2 + sumplus3,
         document.getElementById("subtotal").innerHTML = subtotal.toFixed(2),
@@ -80,7 +80,7 @@ function remove2() {
     const element = document.getElementById("img2");
     element.remove();
     return sumplus2 = 0,
-        total = sumplus + sumplus2 + sumplus3 + 19,
+        total = sumplus + sumplus2 + sumplus3 + 19 + tax,
         document.getElementById("prices").innerHTML = total.toFixed(2),
         subtotal = sumplus + sumplus2 + sumplus3,
         document.getElementById("subtotal").innerHTML = subtotal.toFixed(2),
@@ -93,7 +93,7 @@ function remove3() {
     const element = document.getElementById("img3");
     element.remove();
     return sumplus3 = 0,
-        total = sumplus + sumplus2 + sumplus3 + 19,
+        total = sumplus + sumplus2 + sumplus3 + 19 + tax,
         document.getElementById("prices").innerHTML = total.toFixed(2),
         subtotal = sumplus + sumplus2 + sumplus3,
         document.getElementById("subtotal").innerHTML = subtotal.toFixed(2),
@@ -113,10 +113,10 @@ function myFunction() {
         sumplus -= summinus
         document.getElementById("price1").innerHTML = sumplus.toFixed(2)
         tax = (sumplus + sumplus2 + sumplus3) * 0.18 
-        total = sumplus + sumplus2 + sumplus3 + 19 + tax
-        subtotal = sumplus + sumplus2 + sumplus3
-        document.getElementById("subtotal").innerHTML = subtotal.toFixed(2)
-        document.getElementById("prices").innerHTML = total.toFixed(2)
+        total = sumplus + sumplus2 + sumplus3 + 19 + tax;
+        subtotal = sumplus + sumplus2 + sumplus3;
+        document.getElementById("subtotal").innerHTML = subtotal.toFixed(2);
+        document.getElementById("prices").innerHTML = total.toFixed(2);
         discount -= coupon
         document.getElementById("none").innerHTML = "$" + discount.toFixed(2)
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
