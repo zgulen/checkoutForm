@@ -67,6 +67,7 @@ function remove1() {
     const element = document.getElementById("img1");
     element.remove();
     return sumplus = 0,
+        tax = (sumplus + sumplus2 + sumplus3) * 0.18,
         total = sumplus + sumplus2 + sumplus3 + 19 + tax,
         document.getElementById("prices").innerHTML = total.toFixed(2),
         subtotal = sumplus + sumplus2 + sumplus3,
@@ -80,6 +81,7 @@ function remove2() {
     const element = document.getElementById("img2");
     element.remove();
     return sumplus2 = 0,
+        tax = (sumplus + sumplus2 + sumplus3) * 0.18,
         total = sumplus + sumplus2 + sumplus3 + 19 + tax,
         document.getElementById("prices").innerHTML = total.toFixed(2),
         subtotal = sumplus + sumplus2 + sumplus3,
@@ -93,13 +95,14 @@ function remove3() {
     const element = document.getElementById("img3");
     element.remove();
     return sumplus3 = 0,
+        tax = (sumplus + sumplus2 + sumplus3) * 0.18,
         total = sumplus + sumplus2 + sumplus3 + 19 + tax,
         document.getElementById("prices").innerHTML = total.toFixed(2),
         subtotal = sumplus + sumplus2 + sumplus3,
         document.getElementById("subtotal").innerHTML = subtotal.toFixed(2),
         tax = (sumplus + sumplus2 + sumplus3) * 0.18,
         document.getElementById("tax").innerHTML = "$" + tax.toFixed(2);
-    }
+}
 
 let subtotal = fiyat1 + fiyat2 + fiyat3;
 document.getElementById("tax").innerHTML = tax.toFixed(2)
@@ -112,7 +115,7 @@ function myFunction() {
         document.getElementById("pieces1").innerHTML = parca
         sumplus -= summinus
         document.getElementById("price1").innerHTML = sumplus.toFixed(2)
-        tax = (sumplus + sumplus2 + sumplus3) * 0.18 
+        tax = (sumplus + sumplus2 + sumplus3) * 0.18
         total = sumplus + sumplus2 + sumplus3 + 19 + tax;
         subtotal = sumplus + sumplus2 + sumplus3;
         document.getElementById("subtotal").innerHTML = subtotal.toFixed(2);
@@ -180,7 +183,7 @@ buttons3.addEventListener("click", () => {
     document.getElementById("pieces2").innerHTML = parca1
     sumplus2 += fiyat2
     document.getElementById("price2").innerHTML = sumplus2.toFixed(2)
-    tax = (sumplus + sumplus2 + sumplus3) * 0.18 
+    tax = (sumplus + sumplus2 + sumplus3) * 0.18
     total = sumplus + sumplus2 + sumplus3 + 19 + tax
     document.getElementById("prices").innerHTML = total.toFixed(2)
     document.getElementById("tax").innerHTML = "$" + tax.toFixed(2)
